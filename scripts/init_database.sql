@@ -3,14 +3,15 @@
 Create Database and Schemas
 =============================================================
 Script Purpose:
-    This script creates a new database named 'DataWarehouse' after checking if it already exists. 
-    If the database exists, it is dropped and recreated. Additionally, the script sets up three schemas 
-    within the database: 'bronze', 'silver', and 'gold'.
+	Đoạn script này dùng để tạo database 'DataWarehouse' sau khi kiểm tra nó có tồn tại hay không.
+	Nếu database này tồn tại thì nó sẽ bị drop và tạo lại. Thêm vào đó đoạn script sẽ cài đặt 3 schemas 
+	trong database: 'bronze', 'silver', và 'gold'.
 	
-WARNING:
-    Running this script will drop the entire 'DataWarehouse' database if it exists. 
-    All data in the database will be permanently deleted. Proceed with caution 
-    and ensure you have proper backups before running this script.
+WARNING: 
+	Chạy script này sẽ drop toàn bộ 'DataWarehouse' database nếu nó tồn tại.
+	Toàn bộ dữ liệu trong database sẽ bị xóa. Điều này có thể dẫn đến rủi ro, do đó hãy chắc chắn bạn đã 
+	có dữ liệu backup trước khi chạy cái script này.
+    
 */
 
 USE master;
@@ -39,4 +40,4 @@ CREATE SCHEMA silver;
 GO
 
 CREATE SCHEMA gold;
-GO
+GO	
